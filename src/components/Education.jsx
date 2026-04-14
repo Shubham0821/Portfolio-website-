@@ -38,7 +38,7 @@ const certifications = [
   }
 ];
 
-const Experience = () => {
+const Education = () => {
   return (
     <section id="education" className="py-24 bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800">
       <div className="container mx-auto px-6 md:px-12">
@@ -62,10 +62,10 @@ const Experience = () => {
                   <motion.div 
                     key={index}
                     className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.5, delay: index * 0.15 }}
                   >
                     <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-100 dark:bg-slate-800 text-primary-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-colors group-hover:bg-primary-500 group-hover:text-white">
                       {edu.icon}
@@ -118,4 +118,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;
